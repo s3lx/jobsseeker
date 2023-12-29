@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %} Login {% endblock %}
+
+{% block content %}
+
+<div class="row ">
+    <div class="col-md-8 mx-auto">
+        <h4 class="my-2"> Greetings to new user {{ new_user.email }} </h4>
+        <a> Successful registration <a href="{% url 'accounts:login' %}">Enter</a> </p>
+
+    </div>
+</div>
+
+{% endblock %}
